@@ -1,0 +1,73 @@
+@import 'partials/setup';
+@import 'partials/header';
+// main wrapper
+.wrapper{
+	max-width: 1150px;
+	margin:0 auto;
+}
+//line height
+p{
+	line-height: 1.618;
+}
+//line separator
+#line{
+	height: 10px;
+	width: 100%;
+	background: #11232e; 
+	background: -moz-linear-gradient(left,  #11232e 0%, #01afd3 50%, #b3cace 100%); 
+	background: -webkit-linear-gradient(left,  #11232e 0%,#01afd3 50%,#b3cace 100%); 
+	background: linear-gradient(to right,  #11232e 0%,#01afd3 50%,#b3cace 100%); 
+}
+// general title
+h2.sectionTitle{
+    margin:70px 0;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+//work
+.work{
+	background: #ffffff; 
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 16%, #eaeaea 61%, #d3d3d3 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 16%,#eaeaea 61%,#d3d3d3 100%); 
+	background: radial-gradient(ellipse at center,  #ffffff 16%,#eaeaea 61%,#d3d3d3 100%); 
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	.project{
+		display: flex;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+		border-radius: 10px;
+		justify-content: center;
+		padding: 30px;
+		margin-bottom: 50px;
+		max-width: 800px;
+		.info, .preview{
+			width: 50%;
+			padding: 0px 20px;
+			 	h3 {
+    			margin-top: 0;
+    			font-size: 25px;
+				}
+		}
+		.preview img{
+			width: 100%;
+			max-width: 400px;
+		}
+		img.seeGit {
+	    max-width: 30px;
+		}
+		span.accentBack {
+	    margin-right: 15px;
+	    padding: 5px;
+	    background: #64b4c5;
+	    border-radius: 3px;
+	    box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+		}
+	}
+
+
+
+}
+
+    
