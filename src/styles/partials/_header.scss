@@ -6,41 +6,17 @@
     flex-direction: column;
     align-items: center;
     width: 90px;
-    animation-duration: 3s;
-	ul.menu{
-		  -webkit-transform: rotate(-90deg);
-		  padding: 0;
-		  margin-top: 85px;
-		  li{
-			list-style-type: none;
-		  	background: #01afd3;
-		  	margin: 10px;
-		  	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.29);
-		  	padding: 5px;
-		  	transform: skew(0deg, -8deg);
-		  	}
-		  	a{
-		  		text-decoration: none;
-		  		color: black;
-		  		transform: skew(0deg, 8deg);
-		  		display: block;
-		  		font-weight: bold;
-		  	}
-		  }	
-	}
-
-.midnightHeader.default{
- h1{
-	background-image: url(../assets/light.svg);
-	}
-	
+    animation-delay: .3s;
 }
-	
-.midnightHeader.black {
-	h1  {
-    background-image: url(../assets/dark.svg);
-	}
 
+.midnightHeader.default h1{
+	background-image: url(../assets/light.svg);
+}
+.midnightHeader.black h1{
+    background-image: url(../assets/dark.svg);
+}
+.midnightHeader.light h1{
+	background-image: url(../assets/light.svg);
 }
 .logo h1{
 	text-indent: -1000%;
@@ -108,12 +84,7 @@
 .menuToggle:focus {
 	outline: none;
 }
-.showMenu{
-	display: inline-flex;
-}
-.hideMenu{
-	display: none;
-}
+
 
 // salutation
 
@@ -126,13 +97,42 @@
     background: linear-gradient(rgba(17, 35, 46, 0.90), rgba(17, 35, 46, 0.90)), url(../assets/back.jpg);    
     background-size: cover;
     background-position:40%;
-
+	ul{
+		list-style-type: none;
+		padding: 0;
+		animation-delay:.5s;
+		li{
+			display: inline;
+			margin:10px;
+			color: white;
+			font-size: 18px;
+			font-weight:500;
+			a{
+				text-decoration: none;
+				color: white;
+				transition: all .5s ease;
+			}
+			a:hover{
+				color: #01afd3;
+			}
+		}
+	}
     h2{
-    	font-family: 'Montserrat',sans-serif;
+		font-family: 'Raleway', sans-serif;
     	font-size: 40px;
     	text-align: center;
     	color: white;
     	margin:0;
     	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.45);
+    	a{
+    		color: white;
+    		text-decoration: none;
+    		border-bottom: 5px solid #01afd3;
+    		transition: all .5s ease;
+    	}
+    	a:hover{
+				color: #01afd3;
+				border-bottom: 5px solid white;
+			}
     }
 } 
