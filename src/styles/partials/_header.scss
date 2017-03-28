@@ -20,10 +20,12 @@
 }
 .logo h1{
 	text-indent: -1000%;
-	background-size: 100%;
-	height: 100px;
-	width: 100px;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	height: 87px;
+	width: 97px;
 	margin: 30px;
+	animation-delay:.5s;
 }
 //toggle animation
 .menuToggle {
@@ -122,6 +124,7 @@
     	font-size: 40px;
     	text-align: center;
     	color: white;
+    	letter-spacing: 1px;
     	margin:0;
     	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.45);
     	a{
