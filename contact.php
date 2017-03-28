@@ -3,7 +3,7 @@ $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'gusdomcontact@gmail.com, gdviso@hotmail.com';
+$mail_to = 'gdviso@gmail.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -24,7 +24,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to gusdomcontact@gmail.com');
+		alert('Message failed. Please, send an email to hello@gusdom.com');
 		window.location = 'index.html';
 	</script>
 <?php
