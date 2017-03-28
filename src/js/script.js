@@ -25,10 +25,28 @@ const smooth = () => {
     }
   });
 }
+//sticky nav
+const sticky = () => {
+	var stickyNavTop = $('.nav').offset().top;
+ 
+	var stickyNav = () => {
+	var scrollTop = $(window).scrollTop();
+	      
+	if (scrollTop > stickyNavTop) { 
+	    $('.nav').addClass('sticky');
+	} else {
+	    $('.nav').removeClass('sticky'); 
+	}
+	}
+	$(window).scroll( () => {
+  		stickyNav();
+	});
+};
 //doc ready
 $(function() {
 	menuToggle();
   	$('.logo').midnight();
   	smooth();
 	new WOW().init();
+	sticky();
 });

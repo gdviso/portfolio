@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gustavo Dominguez</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -11,16 +12,6 @@
 		<div class="logo midnightHeader default">
 			<a href="#"><h1>Gustavo Dominguez</h1></a>
 		</div>
-		<!-- <div class="menuToggle">
-		  	<span></span>
-		</div>
-		<nav>
-			<ul class="menu hideMenu">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav> -->
 	</div>		
 		<div class="front">
 			<h2 class="animated fadeIn">Hello. I'm <a href="#about">Gus.</a></h2>
@@ -33,6 +24,14 @@
 </header>
 <section class="about" id="about" data-midnight="black">
 	<div id="line"></div>
+	<div class="nav">
+		<div class="mobileLogo">
+			<img src="public/assets/light.svg" alt="">
+		</div>
+		<div class="menuToggle">
+			<span></span>
+		</div>
+	</div>
 	<h2 class="sectionTitle darkTitle">About</h2>
 		<div class="wrapper aboutContent">
 			<div class="aboutMe  wow animated fadeIn">
@@ -99,8 +98,10 @@
 						<span class="accentBack">React.js</span><span class="accentBack">Sass</span><span class="accentBack">Firebase</span><span class="accentBack">API (ajax)</span>
 					</div>
 					<p>Search songs by lyrics and save them in your profile. Uses MusixMatch and Spotify API's</p>
-					<a href="https://github.com/gdviso/music-app"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="https://music-app-b3597.firebaseapp.com/">View Live</a>
+					<div class="seeMore">
+						<a href="https://github.com/gdviso/music-app"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://music-app-b3597.firebaseapp.com/">View Live</a>
+					</div>
 				</div>
 				<div class="preview">
 					<img src="/public/assets/mymusic.svg" alt="">
@@ -116,9 +117,11 @@
 					<div class="used">
 						<span class="accentBack">Javascript</span><span class="accentBack">jQuery</span><span class="accentBack">Sass</span><span class="accentBack">API (ajax)</span>
 					</div>		
-					<p>Project Description</p>
-					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="http://gusdom.com/movies/">View Live</a>
+					<p>Find a movie to watch! Shows comlete movie info and trailer. Uses The Movie DB API.</p>
+					<div class="seeMore">
+						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="http://gusdom.com/movies/">View Live</a>
+					</div>
 				</div>
 			</div>
 			<!-- indeed project -->
@@ -128,9 +131,11 @@
 					<div class="used">
 						<span class="accentBack">Javascript</span><span class="accentBack">jQuery</span><span class="accentBack">Sass</span><span class="accentBack">API (ajax)</span>
 					</div>
-					<p>Project Description</p>
-					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="#">View Live</a>
+					<p>This app finds job openings in Canada. Search by city and industry. Uses Indeed API. </p>
+					<div class="seeMore">
+						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="#">View Live</a>
+					</div>
 				</div>
 				<div class="preview">
 					<img src="/public/assets/remotely.svg" alt="">
@@ -142,11 +147,11 @@
 					<img src="/public/assets/foundation.svg" alt="">
 				</div>	
 				<div class="info">
-					<h3>Freelance Site</h3>
+					<h3>Client Site</h3>
 					<div class="used">
-						<span class="accentBack">React.js</span><span class="accentBack">Sass</span><span class="accentBack">Firebase</span><span class="accentBack">API (ajax)</span>
+						<span class="accentBack">Wordpress</span><span class="accentBack">Woocomerce</span><span class="accentBack">CSS3</span>
 					</div>	
-					<p>Project Description</p>
+					<p>Complete branding and Woocomerce site for theFOUNDATIONbracelet. </p>
 					<a href="#">View Live</a>
 				</div>
 			</div>

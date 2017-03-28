@@ -1,14 +1,9 @@
 .top{
    	position: fixed;
-    left: 35px;
-    top: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 90px;
-    animation-delay: .3s;
+    animation-delay: .5s;
 }
-
+//logo
 .midnightHeader.default h1{
 	background-image: url(../assets/light.svg);
 }
@@ -25,7 +20,29 @@
 	height: 87px;
 	width: 97px;
 	margin: 30px;
-	animation-delay:.5s;
+}
+//mobile menu:
+.nav {
+    background: #11232e;
+    width: 100%;
+    height: 60px;
+    display: none;
+}
+.sticky{
+	position: fixed;
+	width: 100%;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+.mobileLogo {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    img{
+    	max-width: 50px;
+    }
 }
 //toggle animation
 .menuToggle {
@@ -34,13 +51,16 @@
 	cursor: pointer;
 	position: relative;
 	margin-top: 5px;
-	animation-delay:0.5s;
+	float: right;
+	right:20px;
+	top: 10px;
+	// display: none;
 }
 .menuToggle:before, .menuToggle span, .menuToggle:after {
 	width: 100%;
 	height: 4px;
 	display: block;
-	background: white;
+	background:#01afd3;
 	border-radius: 2px;
 	position: absolute;
 	opacity: 1;

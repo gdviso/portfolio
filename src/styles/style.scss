@@ -1,6 +1,5 @@
 @import 'partials/setup';
 @import 'partials/header';
-@import 'partials/mdq';
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -50,7 +49,7 @@ h2.sectionTitle{
 	.project{
 		display: flex;
 		flex-wrap: wrap;
-		box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 		border-radius: 10px;
 		justify-content: center;
 		padding: 30px;
@@ -60,6 +59,9 @@ h2.sectionTitle{
 			.used{
 				display: flex;
 				justify-content:space-between;
+			}
+			.seeMore{
+				display: flex;
 			}
 		}
 		.info, .preview{
@@ -95,10 +97,10 @@ h2.sectionTitle{
 	    max-width: 30px;
 		}
 		span.accentBack {
-	    padding: 5px;
+	    padding: 5px 10px;
 	    background: #64b4c5;
 	    border-radius: 3px;
-	    box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+	    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 		}
 	}
 }
@@ -169,10 +171,10 @@ section.contact{
     	align-items:center;
     	animation-delay:.3s;
     	animation-duration:2s;
+    	max-width: 450px;
     	p{
     		color: white;
     		font-size: 20px;
-    		max-width: 460px;
     		text-align: center;
     		margin-top: 0;
     		letter-spacing: .8px;
@@ -195,8 +197,10 @@ textarea.feedback-input{
 .contact form {
     display: flex;
 	align-items:center;
+	justify-content: center;
     flex-direction: column;
-    width: 450px;
+    position: relative;
+    width:100%;
     box-shadow: 0px 0px 20px rgba(0,0,0,.7);
     border-radius: 5px;
     padding: 20px 0px 45px 0px;
@@ -207,21 +211,25 @@ textarea.feedback-input{
 	background: radial-gradient(ellipse at center,  #ffffff 16%,#eeeeee 61%,#e3e3e3 100%); 
 }
 button.submit {
-    margin-bottom: 20px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
     width: 70px;
-    padding: 20px;
+    height: 70px;
+    left: 40%;
     font-size: 20px;
     border: none;
     background: #01afd3;
     border-radius: 100%;
     position: absolute;
-    margin-top: 320px;
-    box-shadow: 0px 0px 12px rgba(0,0,0,.7);
+	bottom: -35px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
     transition: .5s ease;
 }
 button.submit:hover{
 	background:#0099b8;
 	width: 75px;
+	height: 75px;
 	font-size: 22px;
 	color: white;
 	padding: 22px;
@@ -247,7 +255,7 @@ input.feedback-input:focus, textarea.feedback-input:focus{
 	box-shadow:0px 0px 10px rgba(0,0,0,.3)
 }
 .social{
-	width: 450px;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content:space-around;
@@ -273,3 +281,5 @@ footer{
 }
 
 // brand colors// light: :#0099b8.... dark #11232e
+
+@import 'partials/mdq';
