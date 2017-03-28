@@ -116,7 +116,7 @@
     align-items: center;
     height: 90vh;
     justify-content:center;
-    background: linear-gradient(rgba(17, 35, 46, 0.90), rgba(17, 35, 46, 0.90)), url(../assets/back.jpg);    
+    background: linear-gradient(rgba(17, 35, 46, 0.90), rgba(17, 35, 46, 0.90)), url(../assets/backbw.jpg);    
     background-size: cover;
     background-position:40%;
 	ul{
@@ -141,10 +141,10 @@
 	}
     h2{
 		font-family: 'Raleway', sans-serif;
-    	font-size: 40px;
+    	font-size: 45px;
     	text-align: center;
     	color: white;
-    	letter-spacing: 1px;
+    	letter-spacing: 2px;
     	margin:0;
     	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.45);
     	a{

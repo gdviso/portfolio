@@ -243,7 +243,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 90vh;
   -ms-flex-pack: center;
       justify-content: center;
-  background: linear-gradient(rgba(17, 35, 46, 0.9), rgba(17, 35, 46, 0.9)), url(../assets/backbw.jpg);
+  background: linear-gradient(rgba(17, 35, 46, 0.9), rgba(17, 35, 46, 0.9)), url(../assets/back.jpg);
   background-size: cover;
   background-position: 40%; }
   .front ul {
@@ -264,10 +264,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         color: #01afd3; }
   .front h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.45); }
     .front h2 a {
@@ -291,10 +291,10 @@ p {
   line-height: 1.618; }
 
 #line {
-  height: 7px;
+  height: 10px;
   width: 100%;
   background: #11232e;
-  background: linear-gradient(to right, #11232e 0%, #01afd3 50%, #e3fbff 100%); }
+  background: linear-gradient(to right, #11232e 0%, #01afd3 50%, #b3cace 100%); }
 
 h2.sectionTitle {
   margin: 70px 0;
@@ -309,6 +309,8 @@ h2.sectionTitle {
   color: white; }
 
 .work {
+  background: #ffffff;
+  background: radial-gradient(ellipse at center, #ffffff 16%, #eeeeee 61%, #e3e3e3 100%);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -316,16 +318,17 @@ h2.sectionTitle {
   -ms-flex-align: center;
       align-items: center; }
   .work .project {
-    background: #f2f2f2;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     -ms-flex-pack: center;
         justify-content: center;
     padding: 30px;
-    margin: 0 30px 50px 30px; }
+    margin: 0 30px 50px 30px;
+    max-width: 800px; }
     .work .project .info .used {
       display: -ms-flexbox;
       display: flex;
@@ -335,16 +338,13 @@ h2.sectionTitle {
       display: -ms-flexbox;
       display: flex; }
     .work .project .info a:hover {
-      background: #0099b8;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-      color: white;
-      border: 1px solid #0099b8; }
+      background: #64b4c5;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15); }
     .work .project .info, .work .project .preview {
       width: 50%;
       padding: 0px 20px; }
       .work .project .info p, .work .project .preview p {
-        margin: 25px 0;
-        font-weight: 400; }
+        margin: 25px 0; }
       .work .project .info h3, .work .project .preview h3 {
         color: #11232e;
         margin-top: 0;
@@ -358,8 +358,7 @@ h2.sectionTitle {
         border: 1px solid;
         background: none;
         border-radius: 3px;
-        margin-right: 10px;
-        transition: .5s ease; }
+        margin-right: 10px; }
         .work .project .info a i, .work .project .preview a i {
           font-size: 25px; }
     .work .project .preview img {
@@ -368,11 +367,9 @@ h2.sectionTitle {
       max-width: 30px; }
     .work .project span.accentBack {
       padding: 5px 10px;
-      font-weight: 400;
-      color: white;
-      background: #0099b8;
-      letter-spacing: .5px;
-      border-radius: 3px; }
+      background: #64b4c5;
+      border-radius: 3px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); }
 
 section.about {
   width: 100%;
@@ -460,8 +457,7 @@ section.contact {
 
 textarea.feedback-input {
   height: 100px;
-  margin-bottom: 30px;
-  resize: none; }
+  margin-bottom: 30px; }
 
 .contact form {
   display: -ms-flexbox;
@@ -478,7 +474,8 @@ textarea.feedback-input {
   border-radius: 5px;
   padding: 20px 0px 45px 0px;
   margin-bottom: 60px;
-  background: white; }
+  background: #ffffff;
+  background: radial-gradient(ellipse at center, #ffffff 16%, #eeeeee 61%, #e3e3e3 100%); }
 
 button.submit {
   display: -ms-flexbox;
@@ -516,7 +513,7 @@ input.feedback-input, textarea.feedback-input {
   padding: 10px;
   margin: 20px 0px;
   color: #01afd3;
-  font-size: 18px; }
+  font-size: 20px; }
 
 input.feedback-input:focus, textarea.feedback-input:focus {
   background: white;
