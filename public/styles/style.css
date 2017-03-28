@@ -324,13 +324,15 @@ h2.sectionTitle {
     border-radius: 5px;
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 30px;
+    padding: 50px;
     margin: 0 30px 50px 30px; }
     .work .project .info .used {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
     .work .project .info .seeMore {
       display: -ms-flexbox;
       display: flex; }
@@ -343,8 +345,9 @@ h2.sectionTitle {
       width: 50%;
       padding: 0px 20px; }
       .work .project .info p, .work .project .preview p {
-        margin: 25px 0;
-        font-weight: 400; }
+        margin-top: 10px;
+        font-weight: 400;
+        margin-bottom: 25px; }
       .work .project .info h3, .work .project .preview h3 {
         color: #11232e;
         margin-top: 0;
@@ -359,20 +362,30 @@ h2.sectionTitle {
         background: none;
         border-radius: 3px;
         margin-right: 10px;
-        transition: .5s ease; }
+        transition: .3s ease; }
         .work .project .info a i, .work .project .preview a i {
           font-size: 25px; }
+    .work .project .preview {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
     .work .project .preview img {
-      max-width: 350px; }
+      max-width: 380px; }
     .work .project img.seeGit {
       max-width: 30px; }
     .work .project span.accentBack {
       padding: 5px 10px;
       font-weight: 400;
       color: white;
+      margin-bottom: 10px;
       background: #0099b8;
       letter-spacing: .5px;
       border-radius: 3px; }
+
+.project.reversed.wow.fadeInLeft.animated .preview {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 section.about {
   width: 100%;
@@ -549,6 +562,10 @@ footer {
     text-align: center;
     color: white;
     font-weight: 4f00; }
+
+@media (max-width: 900px) {
+  .work .project .preview img {
+    max-width: 320px; } }
 
 @media (max-width: 800px) {
   .project {

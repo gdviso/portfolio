@@ -48,12 +48,13 @@ h2.sectionTitle{
 		flex-wrap: wrap;
 		border-radius: 5px;
 		justify-content: center;
-		padding: 30px;
+		padding: 50px;
 		margin: 0 30px 50px 30px;
 		.info{
 			.used{
 				display: flex;
 				justify-content:space-between;
+				flex-wrap:wrap;
 			}
 			.seeMore{
 				display: flex;
@@ -69,8 +70,9 @@ h2.sectionTitle{
 			width: 50%;
 			padding: 0px 20px;
 				p{
-					margin:25px 0;
+					margin-top: 10px;
 					font-weight: 400;
+					margin-bottom: 25px;
 				}
 			 	h3 {
 			 	color: #11232e;
@@ -87,14 +89,18 @@ h2.sectionTitle{
 				   background: none;
 				   border-radius: 3px;
 				   margin-right: 10px;
-				   transition: .5s ease;
+				   transition: .3s ease;
 				   i{
 				    	font-size: 25px;
 				    }
 				}
 		}
+		.preview{
+			display: flex;
+			align-items:center;
+		}
 		.preview img{
-			max-width: 350px;
+			max-width: 380px;
 		}
 		img.seeGit {
 	    max-width: 30px;
@@ -103,11 +109,15 @@ h2.sectionTitle{
 	    padding: 5px 10px;
 	    font-weight: 400;
 	    color: white;
+	    margin-bottom: 10px;
 	    background: #0099b8;
 	    letter-spacing: .5px;
 	    border-radius: 3px;
 		}
 	}
+}
+.project.reversed.wow.fadeInLeft.animated .preview {
+    justify-content: flex-end;
 }
 //about
 section.about{

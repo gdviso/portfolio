@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+	.work .project .preview img {
+   	 max-width: 320px;
+	}
+}
+
 @media (max-width: 800px) { 
 	.project{
     	flex-direction: column;
