@@ -28,8 +28,17 @@
 	}
 }
 
+@media (max-width: 750px) { 
+	.front{
+		background-position: 55%;
+	}
+}
 
 @media (max-width: 500px) { 
+
+	.front{
+	 background: linear-gradient(rgba(17, 35, 46, 0.9), rgba(17, 35, 46, 0.9));
+	}
  	
  	section.contact .contactInfo p{
  		font-size: 18px;

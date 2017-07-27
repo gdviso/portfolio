@@ -1,37 +1,43 @@
 //mobile menu toggle 
 const menuToggle = () => {
-  $('.menuToggle').click(function() {
+  $('.menuToggle').click(() =>  {
     if(!$('.menuToggle').hasClass('close')){
       $('.menuToggle').addClass('close');
       $('.menu').removeClass('hideMenu').addClass('showMenu animated fadeIn');
+      $('.mobileMenu').css('visibility', 'visible');
     } else{
       	$('.menuToggle').removeClass('close');
       	$('.menu').removeClass('showMenu').addClass('hideMenu')
+      	$('.mobileMenu').css('visibility', 'hidden');
   		}
   });
+  $('.menuLink').click(() => {
+		$('.mobileMenu').css('visibility', 'hidden');
+		$('.menuToggle').removeClass('close');
+  });
+  $('.mobileMenu').click(() => {
+		$('.mobileMenu').css('visibility', 'hidden');
+		$('.menuToggle').removeClass('close');
+  });
+
 }
 // smooth scroll
 const smooth = () => {
   $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
       }
-    }
   });
 }
 //sticky nav
 const sticky = () => {
 	var stickyNavTop = $('.nav').offset().top;
- 
 	var stickyNav = () => {
 	var scrollTop = $(window).scrollTop();
-	      
 	if (scrollTop > stickyNavTop) { 
 	    $('.nav').addClass('sticky');
 	} else {
