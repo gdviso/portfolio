@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gustavo Dominguez</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Sans+Pro:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 <header>
@@ -46,7 +50,7 @@
 	<h2 class="sectionTitle darkTitle">About</h2>
 		<div class="wrapper aboutContent">
 			<div class="aboutMe  wow animated fadeIn">
-				<h3>My name is <span class="underlined">Gustavo Dominguez</span> and I'm a front-end developer based in Toronto. I'm passionate about creating websites and applications that are responsive, accesible and pixel perfect.</h3>
+				<h3>My name is <span class="underlined">Gustavo Dominguez</span> and I'm a front-end developer based in Toronto. I'm passionate about creating websites and applications that are responsive, accessible and pixel perfect.</h3>
 				<p class="light">I began my career as a web developer in a marketing agency,
 				building websites with Wordpress. I decided to improve my skills
 				and join HackerYou’s front-end immersive bootcamp. I have an eye for design and I'm proficient using design softwares like: <span class="underlined">Photoshop</span>, <span class="underlined">Illustrator</span>, and <span class="underlined">Sketch</span>.</p>
@@ -130,7 +134,7 @@
 					<div class="used">
 						<span class="accentBack">Javascript</span><span class="accentBack">jQuery</span><span class="accentBack">Sass</span><span class="accentBack">API (ajax)</span>
 					</div>		
-					<p>Find a movie to watch! Shows comlete movie info and trailer. Uses The Movie DB API.</p>
+					<p>Find a movie to watch! Shows detailed movie information and trailers. Uses The Movie DB API.</p>
 					<div class="seeMore">
 						<a href="https://github.com/gdviso/movie-app"><i class="fa fa-github" aria-hidden="true"></i></a>
 						<a href="https://what2watch.netlify.com/">View Live</a>
@@ -174,11 +178,14 @@
 <section class="contact" id="contact" data-midnight="light">
 	<div class="wrapper contactInfo wow animated fadeIn">
 		<h2 class="sectionTitle lightTitle">Get in touch</h2>
-		<p>Let's create something! If forms are not your thing, you can contact me at: <a href="mailto:hello@gusdom.com">hello@gusdom.com</a></p> 
-		<form action="contact.php" method="post">      
-		  <input required name="cf_name" type="text" class="feedback-input" placeholder="Name" />
-		  <input required name="cf_email" type="text" class="feedback-input" placeholder="E-mail" />
-		  <textarea required name="cf_message" class="feedback-input" placeholder="Message"></textarea>
+		<p>Let's create something! If forms are not your thing, you can contact me at: <a href="mailto:gdviso@gmail.com">gdviso@gmail.com</a></p> 
+		<form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>     
+		<p class="fck-spam">
+   			<label>Don’t fill this out: <input name="bot-field"></label>
+ 		 </p> 
+		  <input required name="name" type="text" class="feedback-input" placeholder="Name" />
+		  <input required name="email" type="text" class="feedback-input" placeholder="E-mail" />
+		  <textarea required name="message" class="feedback-input" placeholder="Message"></textarea>
 		  <button class="submit" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 		</form> 
 		<div class="social">
@@ -193,10 +200,6 @@
 	<p>© Gustavo Dominguez 2017</p>
 </footer>
 <!-- script and links: -->
-<link rel="stylesheet" href="public/styles/style.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:800|Source+Sans+Pro:400,600" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="public/js/script.js"></script>
 <script src="src/js/midnight.jquery.min.js"></script>
